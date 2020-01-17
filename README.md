@@ -1,6 +1,4 @@
-# static void Main(string[] args)
-        {
-            Console.WriteLine("Здраствуйте, введите 2 числа для получения их суммы!");
+# Console.WriteLine("Здраствуйте, введите 2 числа для получения их суммы!");
             int i  = Convert.ToInt32(Console.ReadLine());
             int j = Convert.ToInt32(Console.ReadLine());
             int result = Resh(i, j);
@@ -17,8 +15,8 @@
             int z = 5;
             int x = 10;
             int y = 2;
-            int result03 = Resh03(x, y, out z);
-            Console.WriteLine(result03);
+            Resh03(x, y, out z);
+            Console.WriteLine(z);
             Console.ReadKey();
         }
         static int Resh(int a, int b)
@@ -33,9 +31,7 @@
         {
             return p + a;
         }
-        static int Resh03(int x, int y, out int z)
+        static void Resh03(int x, int y, out int z)
         {
             z = (x * x) / y;
-            Console.WriteLine(z);
-            return y + x;
         }
